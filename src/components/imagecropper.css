@@ -1,0 +1,14 @@
+.img-container {
+    display:inline-block;
+    width: 640px;
+    height: 480px;
+    /* float: left; */
+    margin: 20px auto;
+}
+
+.img-preview {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 20px;
+}

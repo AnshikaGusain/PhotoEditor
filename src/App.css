@@ -2,37 +2,63 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color:  #213549;
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*,*::after,*::before{
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  margin:0;
+  width:100%;
+}
+
+.container{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5em auto;
+  /* padding:0.5rem; */
+  font-size:1em;
+
+}
+.filters {
+  display: grid;
+  grid-gap: .5em;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar{
+  color:white;
+}
+.filterThumb {
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: none;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  border: solid 2px gray;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .filterThumb:hover {
+    border: solid 2px purple;
   }
-  to {
-    transform: rotate(360deg);
+
+  .filterThumb span,
+  img {
+    display: block;
   }
-}
+
+  .filterThumb img {
+    margin-bottom: .5em;
+  }
+
+
